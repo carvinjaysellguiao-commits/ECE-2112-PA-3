@@ -6,7 +6,7 @@ The following codes contain solution using Pandas.
 ## A.Positional and Label-Based Slicing
 The objective of this part is to develop the ability to explore and extract specific portions of a dataset using both positional indexing <code>iloc</code> and label-based column selection. 
 <br>
-a. Displaying the shape and complete list of column names of cars
+**a. Displaying the shape and complete list of column names of cars**
 ```python
 df['Model']
 
@@ -19,7 +19,16 @@ Expected Output:
 (32, 12)
 ```
 <code>df.shape</code> showcases the shape as it follows: <i>(rows, columns)</i>.
+<br>
+**b. Positional Slicing**
+```python
+df.iloc[0:6, 0:10]
+cars_6_10 = df.iloc[0:6,0:10]
+```
 
+```python
+df.iloc[:,[0,1,2,4,10 ]]
+```
 ## B. Model Lookup
 The objective of this section is to apply Boolean indexing to locate and retrieve spe3cific records in the dataset based on column values. It aims to strengthen skills in filtering data using conditions and extracting either complete rows or selected columns without relying on fixed row postions.
 
